@@ -1,0 +1,9 @@
+body{margin:0}
+a{color:#1F0ED8}a:hover{color:#13088F}
+@keyframes vpulse{0%{transform:scale(1);opacity:.9}100%{transform:scale(2.6);opacity:0}}
+.pulse{animation:vpulse 2.8s ease-out infinite;transform-origin:center}
+@keyframes vring{0%{transform:scale(.25);opacity:1}100%{transform:scale(1);opacity:0}}
+.ring{animation-name:vring;animation-timing-function:linear;animation-iteration-count:infinite}
+@keyframes vfloat{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-10px) rotate(2deg)}}
+.float{animation:vfloat 3.2s ease-in-out infinite}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #E5177E;outline-offset:2px}
